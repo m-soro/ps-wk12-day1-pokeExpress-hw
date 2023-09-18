@@ -7,6 +7,20 @@ class Index extends React.Component {
     return (
       <div>
         <h1>The Pokemon Index Page</h1>
+
+        {pokemons.map((pokemon, index) => {
+          return (
+            <ul>
+              <li>
+                {pokemon.name.replace(
+                  pokemon.name[0],
+                  pokemon.name[0].toUpperCase()
+                )}
+              </li>
+              <li></li>
+            </ul>
+          );
+        })}
       </div>
     );
   }
