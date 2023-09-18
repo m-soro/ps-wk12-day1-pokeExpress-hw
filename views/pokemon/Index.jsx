@@ -17,7 +17,9 @@ class Index extends React.Component {
                   pokemon.name[0].toUpperCase()
                 )}
               </li>
-              <li></li>
+              <li>
+                <a href={`pokemon/${index}`}>About {pokemon.name}</a>
+              </li>
             </ul>
           );
         })}
