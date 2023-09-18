@@ -16,9 +16,10 @@ app.get("/", (req, res) => {
 });
 
 app.get("/pokemon/", (req, res) => {
-  res.send(pokemons);
+  // check to see if pokemon data is connected to app
+  // res.send(pokemons);
   // 1st argument is the Index.jsx, second is the pokemons data passed in as props
-  //   res.render("pokemon/Index", { pokemons: pokemons });
+  res.render("pokemon/Index", { pokemons: pokemons });
 });
 
 app.listen(port, () => {
