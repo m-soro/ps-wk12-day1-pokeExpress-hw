@@ -6,6 +6,8 @@ const jsxEngine = require("jsx-view-engine");
 // Prokemon data
 const pokemons = require("./models/pokemons.js");
 
+app.use(express.static("public"));
+
 // Add View Template
 app.set("view engine", "jsx");
 app.engine("jsx", jsxEngine());

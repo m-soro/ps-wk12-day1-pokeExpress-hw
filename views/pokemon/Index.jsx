@@ -5,7 +5,8 @@ class Index extends React.Component {
     const { pokemons } = this.props;
 
     return (
-      <div>
+      <div className="container">
+        <link rel="stylesheet" type="text/css" href="/pico.min.css" />
         <h1>The Pokemon Index Page</h1>
 
         {pokemons.map((pokemon, index) => {
